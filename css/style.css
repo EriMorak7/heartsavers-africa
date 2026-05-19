@@ -51,9 +51,9 @@ img { max-width: 100%; display: block; }
 .navbar.scrolled { box-shadow: var(--shadow-md); }
 .nav-container {
   max-width: 1200px; margin: 0 auto; padding: 0 24px;
-  display: flex; align-items: center; justify-content: space-between; height: 72px;
+  display: flex; align-items: center; justify-content: space-between; height: 100px;
 }
-.nav-logo img { height: 48px; width: auto; }
+.nav-logo img { height: 85px; width: auto; }
 .nav-links { display: flex; gap: 8px; align-items: center; }
 .nav-links a {
   padding: 8px 18px; border-radius: 8px; font-weight: 500; font-size: 0.95rem;
@@ -84,7 +84,7 @@ img { max-width: 100%; display: block; }
 .hero {
   min-height: 100vh; display: flex; align-items: center;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, var(--red-dark) 100%);
-  position: relative; overflow: hidden; padding-top: 72px;
+  position: relative; overflow: hidden; padding-top: 100px;
 }
 .hero::before {
   content: ''; position: absolute; top: -50%; right: -30%; width: 80%; height: 200%;
@@ -161,6 +161,9 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: center;
   border: 4px solid var(--white); box-shadow: var(--shadow-md);
   font-size: 3rem; color: var(--red); overflow: hidden;
+}
+.founder-photo img {
+  width: 100%; height: 100%; object-fit: cover;
 }
 .founder-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
 .founder-card .role { color: var(--red); font-weight: 600; font-size: 0.9rem; margin-bottom: 12px; }
@@ -267,8 +270,9 @@ img { max-width: 100%; display: block; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .blog-thumb {
   height: 200px; background: linear-gradient(135deg, var(--red-light), var(--gray-200));
-  display: flex; align-items: center; justify-content: center; font-size: 3rem;
+  display: flex; align-items: center; justify-content: center; font-size: 3rem; overflow: hidden;
 }
+.blog-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .blog-body { padding: 24px; }
 .blog-body .date { color: var(--red); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; }
 .blog-body h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
@@ -319,7 +323,7 @@ img { max-width: 100%; display: block; }
   padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .footer-brand p { color: rgba(255,255,255,0.6); margin-top: 16px; font-size: 0.95rem; }
-.footer-brand img { height: 40px; margin-bottom: 8px; filter: brightness(10); }
+.footer-brand img { height: 130px; margin-bottom: 8px; filter: brightness(10); }
 .footer h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
 .footer ul li { margin-bottom: 10px; }
 .footer ul li a { color: rgba(255,255,255,0.6); transition: var(--transition); font-size: 0.95rem; }
