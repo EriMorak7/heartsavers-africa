@@ -180,7 +180,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
 }
 
 .hero::after {
@@ -219,7 +219,7 @@ img {
 }
 
 .hero h1 span {
-   color: var(--red-light); 
+   color: var(--red); 
   }
 
 .hero p {
@@ -466,27 +466,28 @@ img {
 
 /* ─── FOOTER ─── */
 .footer {
-  background: var(--off-white); color: var(--navy); padding: 60px 0 0;
+  background: var(--navy); color: var(--white); padding: 60px 0 0;
 }
 .footer-grid {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
-  padding-bottom: 40px; border-bottom: 1px solid rgba(13,27,62,0.1);
+  padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.footer-brand p { color: var(--gray-500); margin-top: 16px; font-size: 0.95rem; }
-.footer-brand img { height: 120px; max-width: 100%; object-fit: contain; }
-.footer h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
+.footer-brand { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.footer-brand p { color: rgba(255,255,255,0.6); margin-top: 16px; font-size: 0.95rem; }
+.footer-brand img { height: 130px; margin-bottom: 8px; }
+.footer h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
 .footer ul li { margin-bottom: 10px; }
-.footer ul li a { color: var(--gray-500); transition: var(--transition); font-size: 0.95rem; }
-.footer ul li a:hover { color: var(--red); }
+.footer ul li a { color: rgba(255,255,255,0.6); transition: var(--transition); font-size: 0.95rem; }
+.footer ul li a:hover { color: var(--white); }
 .social-links { display: flex; gap: 12px; }
 .social-links a {
-  width: 40px; height: 40px; border-radius: 10px; color: var(--navy);
-  background: rgba(13,27,62,0.08); display: flex; align-items: center;
+  width: 40px; height: 40px; border-radius: 10px;
+  background: rgba(255,255,255,0.08); display: flex; align-items: center;
   justify-content: center; transition: var(--transition); font-size: 1.1rem;
 }
-.social-links a:hover { background: var(--red); color: var(--white); transform: translateY(-2px); }
+.social-links a:hover { background: var(--red); transform: translateY(-2px); }
 .footer-bottom {
-  padding: 24px 0; text-align: center; color: var(--gray-500); font-size: 0.85rem;
+  padding: 24px 0; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem;
 }
 
 /* ─── ANIMATIONS ─── */
