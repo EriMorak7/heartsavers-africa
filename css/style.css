@@ -473,7 +473,7 @@ img {
   padding-bottom: 40px; border-bottom: 1px solid rgba(13,27,62,0.1);
 }
 .footer-brand p { color: var(--gray-500); margin-top: 16px; font-size: 0.95rem; }
-.footer-brand img { height: 280px; }
+.footer-brand img { height: 120px; max-width: 100%; object-fit: contain; }
 .footer h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
 .footer ul li { margin-bottom: 10px; }
 .footer ul li a { color: var(--gray-500); transition: var(--transition); font-size: 0.95rem; }
