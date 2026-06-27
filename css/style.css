@@ -62,7 +62,8 @@ img {
 
 /* ─── NAVBAR ─── */
 .navbar {
-  position: static;
+  position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
@@ -510,10 +511,11 @@ img {
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 968px) {
-  .nav-links {
+   .nav-links {
     position: fixed; top: 0; right: -100%; width: 80%; max-width: 360px; height: 100vh;
     background: var(--white); flex-direction: column; padding: 100px 32px 32px;
     box-shadow: var(--shadow-xl); transition: var(--transition); gap: 4px;
+    z-index: 999;
   }
   .nav-links.open { right: 0; }
   .nav-links a { width: 100%; padding: 14px 18px; font-size: 1.05rem; }
